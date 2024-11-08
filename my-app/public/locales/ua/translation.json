@@ -1,0 +1,39 @@
+{
+  "welcome1": "Вітаємо!",
+  "welcome2": "Оберіть мову застосунку",
+  "btn-ua": "Українська",
+  "btn-ru": "Російська",
+  "btn-start-screen": "ДАЛІ",
+
+  "reg-new-user": "Реєстрація нового користувача",
+  "input-name":"ПІБ",
+  "input-date":"Дата народження",
+  "input-mail":"E-Mail",
+  "input-phone":"Номер телефону",
+  "input-pin":"Створіть PIN-код",
+  "input-pin-repeat":"Підтвердіть PIN-код",
+  "reg-button":"ЗБЕРЕГТИ",
+
+  "my-balance":"Мій рахунок",
+  "btn-deposit":"Депозит",
+  "btn-send":"Надіслати",
+  "btn-transfer":"Транзакції",
+  "last-transfer":"Останні транзакції",
+  "sorted":"Сортувати ",
+
+
+
+
+  "payment-push-message":"ПОПОВНЕННЯ",
+  "method-payment":"Спосіб оплати",
+  "payment-input-placeholder":"Вкажіть суму поповнення - UAH",
+  "payment-btn":"ПІДТВЕРДИТИ",
+  
+
+
+  "transfer-push-message":"ПЕРЕКАЗ",
+  "transfer-error-message":"Невірний ІD користувача",
+  "transfer-inputId-placeholder":"Вкажіть ID отримувача",
+  "transfer-inputMoney-placeholder":"Вкажіть суму переказу (UAH)",
+  "transfer-btn":"ПІДТВЕРДИТИ"
+}
