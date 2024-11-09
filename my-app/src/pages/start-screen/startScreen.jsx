@@ -10,7 +10,7 @@ const StartScreen = () => {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState(0) // 0 - ua, 1 - ru
   useEffect(()=>{
-    i18n.changeLanguage(language === 1 ? "ua" : "ru")
+    i18n.changeLanguage(language === 0 ? "ua" : "ru")
   },[language])
   return (
     <div className='StartScreen'>

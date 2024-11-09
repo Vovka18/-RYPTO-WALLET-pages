@@ -18,6 +18,7 @@
     margin-left: 18px;
 }
 .push-message h2{
+    width: 200px;
     margin-top: 5px;
     justify-self: center;
     grid-area: text;

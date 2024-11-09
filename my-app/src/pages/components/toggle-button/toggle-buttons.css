@@ -1,6 +1,6 @@
 .toggle-buttons{
     width: 100%;
-    min-height: 85px;
+    /* min-height: 85px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;

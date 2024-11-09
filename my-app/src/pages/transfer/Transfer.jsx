@@ -1,38 +1,34 @@
 import React, { useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next';
 import PushMessage from '../components/push-message/PushMessage'
-import ErrorMessage from '../components/error-message/ErrorMessage';
-import Button from '../components/button/Button';
+import ErrorMessage from '../components/error-message/ErrorMessage'
+import Button from '../components/button/Button'
+import AppNav from '../components/app-nav/AppNav'
 import './Transfer.css'
+import { useTranslation } from 'react-i18next'
 
 const Transfer = () => {
     const { t } = useTranslation();
+    const [errorMsg, setErrorMsg] = useState("")
 
-    const [dataTransfer, setDataTransfer] = useState({id: null, countMoney: 0})
-    const [errorMessage, setErrorMessage] = useState("")
-
-    const chekData = () => {
-        // ...chek id
-        setErrorMessage(t("transfer-error-message"))
+    const [transferData, setTransferData] = useState({id: "", sum: ""})
+    
+    const sendMain = () => {
+      
     }
 
-    useEffect(()=>{
-        console.log(dataTransfer);
-        
-    }, [dataTransfer])
-
     return (
-        <div className='transfer'>
-            <div className="messages">
-                <PushMessage msg={t("transfer-push-message")}/>
-                <ErrorMessage textError={errorMessage} />
+    <div className='transfer'>
+        <PushMessage msg={t("change-pin.push-msg")}/>
+        <ErrorMessage textError={errorMsg}/>
+        <div className="transfer-data">
+            <div className="inputs">
+                <input type="text" placeholder={t("transfer.inputId-placeholder")} onChange={(e)=>setTransferData({...transferData, id: e.target.value})}/>
+                <input type="text" placeholder={t("transfer.inputMoney-placeholder")} onChange={(e)=>setTransferData({...transferData, sum: e.target.value})}/>
             </div>
-            <div className="transfer-input">
-                <input type="text" placeholder={t("transfer-inputId-placeholder")} onChange={(e)=> setDataTransfer({...dataTransfer, id: e.target.value})}/>
-                <input type="number" placeholder={t("transfer-inputMoney-placeholder")} onChange={(e)=> setDataTransfer({...dataTransfer, countMoney: e.target.value})}/>
-                <Button onClick={()=> chekData()} text={t("transfer-btn")}/>
-            </div>
+            <Button text={t("transfer.btn")} onClick={()=>sendMain()}/>
         </div>
+        <AppNav block={"setting"}/>
+    </div>
   )
 }
 

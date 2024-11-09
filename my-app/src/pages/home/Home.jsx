@@ -48,7 +48,7 @@ const Home = () => {
 
 
   return (
-    <div className="wrapper">
+    <div className="home">
     <AppNav block="home"/>
     <main>
         {/*  balance-block && transactions */}
