@@ -49,23 +49,23 @@ const SignUp = () => {
     <div className="SignUp">
       <ErrorMessage textError={messageError}/>
       <main>
-        <h4>{t("reg-new-user")}</h4>
+        <h4>{t("sign-up.reg-new-user")}</h4>
 
         <div className="inputs">
-            <input id="text" type="text" name="name" placeholder={t("input-name")} onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })}/>
-            {/* <input id="date" type="date" name="date" placeholder={t("input-date")} min="1900-01-01" max="2010-01-01"onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })}/> */}
+            <input id="text" type="text" name="name" placeholder={t("sign-up.input-name")} onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })}/>
+            {/* <input id="date" type="date" name="date" placeholder={t("sign-up.input-date")} min="1900-01-01" max="2010-01-01"onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })}/> */}
             
             <div className="input-date">
-              <input id="date-text" type="text" placeholder={t("input-date")} onChange={changeInputDate} value={userData.date}/>
+              <input id="date-text" type="text" placeholder={t("sign-up.input-date")} onChange={changeInputDate} value={userData.date}/>
               <input type="date" onChange={changeInputDate} />
             </div>
             
-            <input id="email" type="email" name="email" placeholder={t("input-mail")} onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })}/>
-            <input id="tel" type="tel" name="phone" placeholder={t("input-phone")} onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })} />
-            <input id="password" type="password" name="pin" maxLength="4" placeholder={t("input-pin")} onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })}/>
-            <input id="password-repeat" type="password" name="pinRepeat" maxLength="4" placeholder={t("input-pin-repeat")} onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })}/>
+            <input id="email" type="email" name="email" placeholder={t("sign-up.input-mail")} onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })}/>
+            <input id="tel" type="tel" name="phone" placeholder={t("sign-up.input-phone")} onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })} />
+            <input id="password" type="password" name="pin" maxLength="4" placeholder={t("sign-up.input-pin")} onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })}/>
+            <input id="password-repeat" type="password" name="pinRepeat" maxLength="4" placeholder={t("sign-up.input-pin-repeat")} onChange={(e) => setUserData({ ...userData, [e.target.name]: e.target.value })}/>
         </div>
-        <Button onClick={()=> chekEnter()} text={t("reg-button")} />
+        <Button onClick={()=> chekEnter()} text={t("sign-up.reg-button")} />
       </main>
     </div>
   );

@@ -14,15 +14,15 @@ const Payment = () => {
 
   return (
     <div className='payment'>
-        <PushMessage msg={t("payment-push-message")}/>
+        <PushMessage msg={t("payment.push-message")}/>
         <div className="method-data">
             <div className="method-payment">
-                <h4>{t("method-payment")}</h4>
+                <h4>{t("payment.method-payment")}</h4>
                 <ToggleButtons btn1={"Apple Pay"} btn2={"Google Pay"} setParametr={setPaymentMethod}/>
             </div>
             <div className="input-data">
-              <input type="text" placeholder={t("payment-input-placeholder")} onChange={(e)=>setSumPayment(e.target.value)} />
-              <Button text={t("payment-btn")}/>
+              <input type="text" placeholder={t("payment.input-placeholder")} onChange={(e)=>setSumPayment(e.target.value)} />
+              <Button text={t("payment.btn")}/>
             </div>
         </div>
 

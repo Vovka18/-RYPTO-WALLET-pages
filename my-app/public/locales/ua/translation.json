@@ -1,23 +1,29 @@
 {
-  "welcome1": "Вітаємо!",
-  "welcome2": "Оберіть мову застосунку",
-  "btn-ua": "Українська",
-  "btn-ru": "Російська",
-  "btn-start-screen": "ДАЛІ",
-  "reg-new-user": "Реєстрація нового користувача",
-  "input-name": "ПІБ",
-  "input-date": "Дата народження",
-  "input-mail": "E-Mail",
-  "input-phone": "Номер телефону",
-  "input-pin": "Створіть PIN-код",
-  "input-pin-repeat": "Підтвердіть PIN-код",
-  "reg-button": "ЗБЕРЕГТИ",
-  "my-balance": "Мій рахунок",
-  "btn-deposit": "Депозит",
-  "btn-send": "Надіслати",
-  "btn-transfer": "Транзакції",
-  "last-transfer": "Останні транзакції",
-  "sorted": "Сортувати ",
+  "start-screen": {
+    "welcome1": "Вітаємо!",
+    "welcome2": "Оберіть мову застосунку",
+    "btn-ua": "Українська",
+    "btn-ru": "Російська",
+    "btn": "ДАЛІ"
+  },
+  "sign-up": {
+    "reg-new-user": "Реєстрація нового користувача",
+    "input-name": "ПІБ",
+    "input-date": "Дата народження",
+    "input-mail": "E-Mail",
+    "input-phone": "Номер телефону",
+    "input-pin": "Створіть PIN-код",
+    "input-pin-repeat": "Підтвердіть PIN-код",
+    "reg-button": "ЗБЕРЕГТИ"
+  },
+  "home": {
+    "my-balance": "Мій рахунок",
+    "btn-deposit": "Депозит",
+    "btn-send": "Надіслати",
+    "btn-transfer": "Транзакції",
+    "last-transfer": "Останні транзакції",
+    "sorted": "Сортувати "
+  },
   "settings": {
     "push-msg": "МЕНЮ НАЛАШТУВАНЬ",
     "language-app": "Мова застосунку",
@@ -60,14 +66,16 @@
     "text": "1500 UAH успішно зараховано на Ваш баланс!",
     "btn": "ПОВЕРНУТИСЬ"
   },
-  "payment-push-message": "ПОПОВНЕННЯ",
-  "method-payment": "Спосіб оплати",
-  "payment-input-placeholder": "Вкажіть суму поповнення - UAH",
-  "payment-btn": "ПІДТВЕРДИТИ",
-  "pin":{
-    "welcome1":"Добрий вечір, ",
-    "welcome2":"Введіть PIN-код",
-    "btn":"УВІЙТИ",
-    "forgot-pin":"Забули PIN?"
+  "payment":{
+    "push-message": "ПОПОВНЕННЯ",
+    "method-payment": "Спосіб оплати",
+    "input-placeholder": "Вкажіть суму поповнення - UAH",
+    "btn": "ПІДТВЕРДИТИ"
+  },
+  "pin": {
+    "welcome1": "Добрий вечір, ",
+    "welcome2": "Введіть PIN-код",
+    "btn": "УВІЙТИ",
+    "forgot-pin": "Забули PIN?"
   }
 }

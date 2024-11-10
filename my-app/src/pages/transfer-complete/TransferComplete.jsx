@@ -10,13 +10,15 @@ import './transfer-complete.css'
 const TransferComplete = () => {
     const { t } = useTranslation();
 
+    const transferUserId = "ID75648"
+
   return (
     <div className='transferComplete'>
         <PushMessage msg={t("transfer-complete.push-msg")}/>
         <div className="completed">
             <AcceptIco/>
             <div className="text-complete">
-                <h4>{t("transfer-complete.text")}</h4>
+                <h4>{t("transfer-complete.text")} {transferUserId}</h4>
                 <Button text={t("transfer-complete.btn")}/>
             </div>
         </div>

@@ -16,12 +16,12 @@ const StartScreen = () => {
     <div className='StartScreen'>
         <MainLogo/>
         <h4>
-        {t('welcome1')}
+        {t('start-screen.welcome1')}
         <br />
-        {t('welcome2')}
+        {t('start-screen.welcome2')}
         </h4>
-        <ToggleButtons btn1={t('btn-ua')} btn2={t('btn-ru')} setParametr={setLanguage}/>
-        <Button text={t("btn-start-screen")}/>
+        <ToggleButtons btn1={t('start-screen.btn-ua')} btn2={t('start-screen.btn-ru')} setParametr={setLanguage}/>
+        <Button text={t('start-screen.btn')}/>
     </div>
   )
 }

@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <StartScreen/>
+      {/* <StartScreen/> */}
       {/* <SignUp/> */}
       {/* <Home/> */}
       {/* <Settings/> */}
@@ -25,7 +25,7 @@ function App() {
       {/* <PaymentComplete/> */}
       {/* <Transfer/> */}
       {/* <TransferComplete/> */}
-      {/* <EnterPin/> */}
+      <EnterPin/>
     </div>
   );
 }

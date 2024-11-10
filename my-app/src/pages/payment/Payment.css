@@ -29,6 +29,7 @@
     height: 81px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .payment .method-data .method-payment .toggle-buttons {
     flex-direction: row;
