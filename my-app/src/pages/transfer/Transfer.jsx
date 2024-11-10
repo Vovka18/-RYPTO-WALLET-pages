@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {useState } from 'react'
 import PushMessage from '../components/push-message/PushMessage'
 import ErrorMessage from '../components/error-message/ErrorMessage'
 import Button from '../components/button/Button'

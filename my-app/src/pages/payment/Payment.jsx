@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import ToggleButtons from "../components/toggle-button/ButtonToggle"
 import Button from "../components/button/Button"

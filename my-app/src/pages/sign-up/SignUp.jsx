@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Button from "../components/button/Button";
 import ErrorMessage from "../components/error-message/ErrorMessage";
+
 import "./SignUp.css";
+import axios from "axios";
 
 const SignUp = () => {
   const { t } = useTranslation();
@@ -21,7 +23,7 @@ const SignUp = () => {
     console.log(userData);
   }, [messageError]);
 
-  const chekEnter = () => {
+  const chekEnter = async () => {
     const validMail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const phoneRegex = /^(\+?\d{1,3})?[-.\s]?(\(?\d{1,4}\)?)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
     const validDate = /^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/;
@@ -38,7 +40,23 @@ const SignUp = () => {
         setMessageError("Incorrect pin");
     }else if(userData.pin !== userData.pinRepeat){
         setMessageError("Incorrect repeat pin");
+    }else{
+      axios.post("https://api.example.com/register", {
+        "birth_date": userData.date,
+        "email": userData.email,
+        "full_name": userData.name,
+        "phone": userData.phone,
+        "pin": userData.pin,
+        "userId": window.Telegram.WebApp.initDataUnsafe?.user?.id
+      })
+      .then(response => {
+        console.log(response.data);
+      })
+      .catch(error => {
+        console.error("Error sending data:", error);
+      });
     }
+
   };
 
   const changeInputDate = (e) => {

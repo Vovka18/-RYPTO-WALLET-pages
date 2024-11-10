@@ -10,12 +10,21 @@ import PaymentComplete from './pages/payment-complete/PaymentComplete';
 import TransferComplete from './pages/transfer-complete/TransferComplete';
 import EnterPin from './pages/enter-pin/EnterPin';
 import './App.css';
+import { useEffect } from 'react';
+import axios from 'axios';
 
 function App() {
 
+  // alert(JSON.stringify(window.Telegram.WebApp.initDataUnsafe?.user?.id))
+
+  // useEffect(async ()=>{
+  //   // axios.post()
+    
+  // })
+  
   return (
     <div className="App">
-      {/* <StartScreen/> */}
+      <StartScreen/>
       {/* <SignUp/> */}
       {/* <Home/> */}
       {/* <Settings/> */}
@@ -25,7 +34,7 @@ function App() {
       {/* <PaymentComplete/> */}
       {/* <Transfer/> */}
       {/* <TransferComplete/> */}
-      <EnterPin/>
+      {/* <EnterPin/> */}
     </div>
   );
 }

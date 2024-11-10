@@ -15,7 +15,7 @@ const ChangePin = () => {
     const sendMain = () => {
         console.log(pinData.newPin === pinData.pinRepeat && Number(pinData.newPin) != isNaN);
         
-        if(pinData.newPin === pinData.pinRepeat && pinData.newPin.length === 4 && Number(pinData.newPin) != isNaN){    //ok
+        if(pinData.newPin === pinData.pinRepeat && pinData.newPin.length === 4 && Number(pinData.newPin) !== isNaN){    //ok
 
         }else{
             setErrorMsg(t("change-pin2.error-msg"))
